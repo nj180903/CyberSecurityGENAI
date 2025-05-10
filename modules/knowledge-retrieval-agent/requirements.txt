@@ -1,0 +1,6 @@
+google-generativeai
+sentence-transformers
+scikit-learn
+PyMuPDF
+numpy
+python-dotenv

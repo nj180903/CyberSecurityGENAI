@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 194 100% 42%;
+    --primary-foreground: 195 100% 95%;
+
+    --secondary: 200 98% 36%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 80%;
+
+    --accent: 197 92% 62%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 197 92% 62%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cyber-dark text-foreground font-sans;
+  }
+
+  /* Cybersecurity-themed scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-cyber-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cyber-muted rounded-md;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber;
+  }
+
+  .cyber-card {
+    @apply bg-card border border-cyber-muted/20 rounded-md shadow-md shadow-cyber/5 backdrop-blur-sm;
+  }
+
+  .cyber-gradient {
+    @apply bg-gradient-to-br from-cyber to-cyber-muted;
+  }
+
+  .cyber-text-glow {
+    @apply text-cyber drop-shadow-[0_0_6px_rgba(0,180,216,0.5)];
+  }
+
+  .cyber-border-glow {
+    @apply border border-cyber/50 shadow-[0_0_10px_rgba(0,180,216,0.3)];
+  }
+  
+  .data-flow-line {
+    @apply absolute top-0 h-20 w-[1px] bg-cyber/20 opacity-0 animate-data-flow;
+  }
+  
+  .scanner-line {
+    @apply absolute top-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyber to-transparent animate-scanning;
+  }
+}
