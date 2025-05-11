@@ -58,12 +58,7 @@ npm install
 npm start
 ```
 
-Or for Python (if applicable):
 
-```bash
-pip install -r requirements.txt
-python app.py
-```
 
 ---
 
