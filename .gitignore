@@ -2,7 +2,6 @@
 .env
 modules/knowledge-retrieval-agent/data/
 modules/knowledge-retrieval-agent/embeddings/
-images/
 modules/pentesting/
 modules/log_analysis/data/
 papers/
